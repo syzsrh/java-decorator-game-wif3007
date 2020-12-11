@@ -16,7 +16,7 @@ import javax.swing.JFrame;
 public class Game extends JFrame implements ActionListener {
     
     public Game(){
-        System.out.println("Test");
+        
     }
     
     public void actionPerformed(ActionEvent e) {
