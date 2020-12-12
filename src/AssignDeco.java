@@ -26,5 +26,16 @@ public class AssignDeco {
         manager.onButtonWasPushed(0);
         manager.onButtonWasPushed(1);
         System.out.println(manager);
+        
+        Ketupat ketupat = new Ketupat();
+        Curtain curtain = new Curtain();
+        Pelita pelita = new Pelita();
+        Kuih kuih = new Kuih();
+        Firework firework = new Firework();
+        Radio radio = new Radio();
+        People people = new People();
+        
+        RoomDecoratorFacade roomDecorator = new RoomDecoratorFacade(lampu, ketupat, curtain, pelita, kuih, firework, radio, people);
+        roomDecorator.allDecoration();
     }
 }

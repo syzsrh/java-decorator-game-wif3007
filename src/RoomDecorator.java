@@ -48,6 +48,10 @@ class Ketupat extends RoomDecorator{
     public String getDesc() {
         return room.getDesc()+", Ketupat ON";
     }
+    
+    public void on(){
+        System.out.println("Hanging ketupat...");
+    }
 }
 
 class Curtain extends RoomDecorator{
@@ -55,6 +59,10 @@ class Curtain extends RoomDecorator{
     @Override
     public String getDesc() {
         return room.getDesc()+", Curtain ON";
+    }
+    
+    public void on(){
+        System.out.println("Hanging the curtain..");
     }
 
 }
@@ -65,7 +73,10 @@ class Pelita extends RoomDecorator{
     public String getDesc() {
         return room.getDesc()+", Pelita ON";
     }
-
+    
+    public void on(){
+        System.out.println("Light up pelita..");
+    }
 }
 
 class Kuih extends RoomDecorator{
@@ -74,7 +85,10 @@ class Kuih extends RoomDecorator{
     public String getDesc() {
         return room.getDesc()+", Kuih ON";
     }
-
+    
+    public void on(){
+        System.out.println("Serve the kuih..");
+    }
 }
 
 class Firework extends RoomDecorator{
@@ -84,6 +98,9 @@ class Firework extends RoomDecorator{
         return room.getDesc()+", Firework ON";
     }
 
+    public void on(){
+        System.out.println("Light up firework..");
+    }
 }
 
 class Radio extends RoomDecorator{
@@ -93,6 +110,9 @@ class Radio extends RoomDecorator{
         return room.getDesc()+", Radio ON";
     }
 
+    public void on(){
+        System.out.println("On the radio..");
+    }
 }
 
 class People extends RoomDecorator{
@@ -100,6 +120,10 @@ class People extends RoomDecorator{
     @Override
     public String getDesc() {
         return room.getDesc()+", People ON";
+    }
+    
+    public void on(){
+        System.out.println("Peoples visiting..");
     }
 
 }
